@@ -19,6 +19,7 @@ function Form(){
                         type="text"
                         id="name" 
                         placeholder="Digite seu nome" 
+                        class="btn"
                         onChange={(event)=>setName(event.target.value)}
                     />
                 </div>
@@ -29,12 +30,13 @@ function Form(){
                     type="text" 
                     id="password"
                     placeholder="Digite sua senha"
+                    class="btn"
                     onChange={(event)=>setPassword(event.target.value)}
                     />  
                 </div>
 
                 <div>
-                    <input type="submit" value="cadastrar"></input>
+                    <input type="submit" class="btn" value="cadastrar"></input>
                 </div>
             </form>
         </>
