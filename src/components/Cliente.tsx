@@ -16,6 +16,16 @@ export default function Cliente({id,nome,cpf,saldo,onDelete}:propCliente){
         <Text style={styles.texto}>Nome.:{nome}</Text>
         <Text style={styles.texto}>CPF.:{cpf}</Text>
         <Text style={styles.texto}>Saldo.:{saldo}</Text>
+
+        <View style={styles.row}>
+            <TouchableOpacity style={styles.btn} onPress={() => onDelete(id)}>
+                <Text style={styles.txtBtn}>Excluir</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.btn2}>
+                <Text style={styles.btn2}>Editar</Text>
+            </TouchableOpacity>
+        </View>
         </>
     )
 
@@ -40,6 +50,10 @@ const styles = StyleSheet.create({
         borderRadius:8,
         margin:10,
 
+    },
+    btn2:{
+        flex:1,
+        backgroundColor:'E41B40FF'
     },
     txtBtn:{
         textAlign:'center'
