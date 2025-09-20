@@ -1,11 +1,12 @@
 import './App.css'
 import Evento from './components/Evento'
 import Form from './components/Form'
+import Condicional from './components/Condicional'
 function App() {
   return(
     <div className='App'>
-      <h1>TELA DE LOGIN EVENTOS</h1>
-      <Form/>
+      <h1>Condição</h1>
+      <Condicional/>
     </div>
   )
   
